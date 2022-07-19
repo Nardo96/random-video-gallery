@@ -1,0 +1,16 @@
+#vid-thumbnails{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#queue-vids-container{
+    display:flex;
+    flex-direction: column;
+    
+}
+
+
+#queue-vids-container div {
+    display:flex;
+}

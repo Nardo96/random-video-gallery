@@ -17,7 +17,8 @@ with open("filenames.txt", mode="w") as filenames:
 
 with open("filenames.js", mode="w") as js:
     js.write("let videoNames = [];")
-for match in matches:
-    with open("filenames.js", mode="a") as js:
-        filepath = "./videos/"+match
+
+with open("filenames.js", mode="a") as js:
+    for match in matches:
+        filepath = DIRECTORY+match
         js.write(f"\nvideoNames.push(\"{filepath}\");")

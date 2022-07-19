@@ -1,7 +1,14 @@
+// Shuffle video names array
+for (let i = videoNames.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * (i+1));
+    [videoNames[i], videoNames[j]] = [videoNames[j], videoNames[i]]
+}
+
 let mainVideo = document.getElementById("main-video");
-mainVideo.setAttribute("src", videoNames[5]);
+mainVideo.setAttribute("src", videoNames[0]);
+mainVideo.setAttribute("preload", "auto");
 mainVideo.setAttribute("autoplay", "true");
-mainVideo.addEventListener("ended", playNext)
+mainVideo.addEventListener("ended", playNext);
 
 let queueVids = document.getElementById("queue-vids-container")
 

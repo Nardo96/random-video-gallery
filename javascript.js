@@ -12,7 +12,7 @@ mainVideo.addEventListener("ended", playNext);
 
 let queueVidsContainer = document.getElementById("queue-vids-container")
 
-const VIDEOLIMIT = 9;
+const VIDEOLIMIT = 10;
 let vidCounter = 0;
 
 for (let i = 0; i < videoNames.length; i++){
@@ -62,8 +62,9 @@ mainVideo.setAttribute("src", this.textContent)
 
 function playNext(){
   index = videoNames.findIndex(item => item == this.getAttribute("src"))
-  next = index + 1
-	setTimeout( () => mainVideo.setAttribute("src", videoNames[next]), 500)
-    
+  if ((index < VIDEOLIMIT - 1) && (index < videoNames.length-1)){
+	next = index + 1
+	setTimeout(() => mainVideo.setAttribute("src", videoNames[next]), 500)
+  }
 
 }

@@ -1,6 +1,7 @@
 let mainVideo = document.getElementById("main-video");
 mainVideo.setAttribute("src", videoNames[5]);
 mainVideo.setAttribute("autoplay", "true");
+mainVideo.addEventListener("ended", playNext)
 
 let queueVids = document.getElementById("queue-vids-container")
 
@@ -25,4 +26,12 @@ queueVids.appendChild(queueVid)
 
 function setMainVideo(){
 mainVideo.setAttribute("src", this.textContent)
+}
+
+function playNext(){
+    index = videoNames.findIndex(item => item == this.getAttribute("src"))
+    next = index + 1
+    setTimeout( () => mainVideo.setAttribute("src", videoNames[next]), 500)
+    
+
 }

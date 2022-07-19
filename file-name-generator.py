@@ -2,7 +2,7 @@ import subprocess
 import re
 
 DIRECTORY = "./videos/"
-COMMAND = 'ls'
+COMMAND = "ls"
 
 ## Generate a list of filenames from the given directory]
 dir_call = subprocess.run(COMMAND, text=True, shell=True, cwd=DIRECTORY, stdout=subprocess.PIPE, stdin=subprocess.PIPE, stderr=subprocess.PIPE)

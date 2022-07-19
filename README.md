@@ -5,4 +5,9 @@ types: .webm, .mp4
 
 1) Place collection of videos into the 'videos' folder
 2) Run the python script to generate a list of video file names and create a javascript file that loads these file names into an array
+    NOTE: If running on Windows, open the script in a text editor and set: 
+
+    DIRECTORY = ".\videos\"
+    COMMAND = "dir"
+
 3) Open random-video-gallery.html

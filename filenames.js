@@ -7,3 +7,4 @@ videoNames.push("./videos/1656109299040.webm");
 videoNames.push("./videos/1656114132867.webm");
 videoNames.push("./videos/1656161713410.webm");
 videoNames.push("./videos/1656181554655.webm");
+videoNames.push("./videos/file_example_MP4_480_1_5MG.mp4");

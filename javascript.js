@@ -12,6 +12,8 @@ vid.setAttribute("src", video)
 vid.setAttribute("type", "video/webm")
 vid.setAttribute("preload", "metadata")
 vid.setAttribute("height", "40px")
+if (video.endsWith(".webm")) vid.setAttribute("type", "video/webm")
+else if (video.endsWith(".mp4")) vid.setAttribute("type", "video/mp4")
 
 let vidTitle = document.createElement("div")
 vidTitle.textContent = video

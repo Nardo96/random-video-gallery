@@ -10,7 +10,7 @@ mainVideo.setAttribute("preload", "auto");
 mainVideo.setAttribute("autoplay", "true");
 mainVideo.addEventListener("ended", playNext);
 
-let queueVids = document.getElementById("queue-vids-container")
+let queueVidsContainer = document.getElementById("queue-vids-container")
 
 const VIDEOLIMIT = 9;
 let vidCounter = 0;
@@ -31,7 +31,7 @@ for (let i = 0; i < videoNames.length; i++){
 	let queueVid = document.createElement("div")
 	queueVid.appendChild(vid)
 	queueVid.appendChild(vidTitle)
-	queueVids.appendChild(queueVid)
+	queueVidsContainer.appendChild(queueVid)
 	
 	if (++vidCounter == VIDEOLIMIT) break
 	

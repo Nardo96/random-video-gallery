@@ -1,16 +1,44 @@
-#vid-thumbnails{
-    display: flex;
-    flex-direction: column;
-    
+*{
+    background-color:rgb(53, 53, 53);
+    color: rgb(238, 238, 224);
 }
 
-#queue-vids-container{
+#queue-vids-container, #vid-vidthumbnails{
     display:flex;
     flex-direction: column;
     
 }
-
 
 #queue-vids-container div {
     display:flex;
+    max-height: 600px;
+}
+
+#queue-vids-container {
+    overflow-y: scroll;
+    height: 200px;
+}
+
+#play-queue-container, #vid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#vid-container {
+    padding-top: 25px;
+}
+
+#vid-container video {
+    max-height: 480px;
+}
+
+#play-queue-container {
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+#queue-title {
+    margin-bottom: 10px;
+    font-weight:bold;
 }

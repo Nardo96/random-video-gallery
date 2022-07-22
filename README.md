@@ -1,7 +1,7 @@
 # random-video-gallery
 Loads and formats a randomized selection of videos from a local directory 
 into an HTML document. Built for use with Firefox. Acceptable video file 
-types: .webm, .mp4
+types: .webm, .mp4. Autoplays the next video in the queue.
 
 Note - the constant VIDEOLIMIT in "javascript.js" determines the maximum number of videos loaded. Change at your discretion.
 
